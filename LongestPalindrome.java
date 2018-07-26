@@ -9,8 +9,6 @@ public class LongestPalindrome {
         Scanner sc=new Scanner(System.in);
         String string=sc.next();
         String largestPalindrome=new String();
-        int startIndex;
-        int endIndex;
         int maxLength=0;
         
         for(int i=0;i<string.length();i++)
@@ -23,8 +21,6 @@ public class LongestPalindrome {
                     if(subString.length() > maxLength)
                     {
                         largestPalindrome=subString;
-                        startIndex=i;
-                        endIndex=j;
                         maxLength=subString.length();
                     }
                 }
