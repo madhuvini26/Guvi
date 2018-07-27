@@ -3,6 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package mypackage;
+
 import java.util.Scanner;
 
 /**
@@ -13,13 +15,14 @@ public class Encoding {
     static final String ALPHABETS="abcdefghijklmnopqrstuvwxyz";
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
+        System.out.print("Input : ");
         String string1=sc.next();
         String string2=sc.next();
         
         if(!string1.matches(".*\\d+.*") && !string2.matches(".*\\d+.*"))
         {
             if(string1.length()==string2.length())
-                System.out.println("Encode String : " + encode(string1,string2));
+                System.out.println("Output :\n" + encode(string1,string2));
             else
                 System.out.println("Please enter strings of equal length");
         }
