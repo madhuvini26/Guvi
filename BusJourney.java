@@ -65,7 +65,7 @@ public class BusJourney {
         }
         else
         {
-            System.out.println("Invalid location / Bus will run out of fuel before reaching gas station");
+            System.out.println("Output :\nInvalid location / Bus will run out of fuel before reaching gas station");
         }
     }
 }
