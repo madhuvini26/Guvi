@@ -30,8 +30,7 @@ public class CheckPost {
         
         System.out.println("Input : ");
         int n=sc.nextInt();
-        
-        
+
         graph = new ArrayList<>();        
         reverseGraph = new ArrayList<>();        
         pi = new ArrayList<>();
@@ -84,26 +83,6 @@ public class CheckPost {
             }
         }
         
-        /*System.out.println("Graph");
-        for(int a=0;a<graph.size();a++)
-        {
-            for(int b=0;b<graph.get(a).size();b++)
-            {
-                System.out.print(graph.get(a).get(b) + " ");
-            }
-            System.out.println();
-        }
-        
-        System.out.println("Reverse Graph");
-        for(int a=0;a<reverseGraph.size();a++)
-        {
-            for(int b=0;b<reverseGraph.get(a).size();b++)
-            {
-                System.out.print(reverseGraph.get(a).get(b) + " ");
-            }
-            System.out.println();
-        }*/
-        
         for(i=0;i<n;i++)
         {
             DFS(i);
@@ -115,11 +94,6 @@ public class CheckPost {
             pi.add(i, pair);
             visited[i]=0;
         }
-        
-        /*for(i=0;i<pi.size();i++)
-        {
-            System.out.println("Key " + pi.get(i).getKey() + " Value " + pi.get(i).getValue());
-        }*/
         
         Collections.sort(pi, new Comparator<Pair<Integer, Integer>>() {
             @Override
@@ -138,8 +112,7 @@ public class CheckPost {
         
         for(i=0;i<n;i++)
         {
-            minimum=Long.MAX_VALUE;
-            //System.out.println(pi.get(i).getValue());
+            minimum=Long.MAX_VALUE;            
             RDFS(pi.get(i).getValue());
             if(minimum!=Long.MAX_VALUE)
             {
@@ -171,6 +144,7 @@ public class CheckPost {
             time1++;
         }
     }
+    
     private static void RDFS(int k)
     {
         int length=reverseGraph.get(k).size();
