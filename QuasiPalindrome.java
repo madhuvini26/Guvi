@@ -13,7 +13,7 @@ public class QuasiPalindrome {
         System.out.print("Input : ");
         String number=String.valueOf(sc.nextInt());
         boolean quasiPalindrome=false;
-        for(int i=0;i<=trailingZerosCount(number);i++)
+        for(int i=0;i<=trailingZeros(number)-leadingZeros(number);i++)
         {
             if(isPalindrome(number))
             {
@@ -31,13 +31,17 @@ public class QuasiPalindrome {
     {
         return number.equalsIgnoreCase((new StringBuilder(number).reverse()).toString());
     }
-    private static int trailingZerosCount(String number)
+    private static int trailingZeros(String number)
+    {
+        String reverse=(new StringBuilder(number).reverse()).toString();
+        return leadingZeros(reverse);
+    }
+    private static int leadingZeros(String number)
     {
         int count=0;
-        String reverse=(new StringBuilder(number).reverse()).toString();
-        for(int i=0;i<reverse.length();i++)
+        for(int i=0;i<number.length();i++)
         {
-            if(reverse.charAt(i)!='0')
+            if(number.charAt(i)!='0')
                 break;
             count++;
         }
