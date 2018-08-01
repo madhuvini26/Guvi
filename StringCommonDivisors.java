@@ -19,29 +19,22 @@ public class StringCommonDivisors {
         
         int count=0;
         
-        if(len1>len2)
+        if(len1<=len2)
         {
-            for(int i=1;i<=len2;i++)
-            {
-                if(len1%i==0 && len2%i==0)
-                {
-                    if(isACommonDivisor(str1,str2,str1.substring(0,i)))
-                    {
-                        count++;
-                    }
-                }
-            }
+            String temp=str1;
+            str1=str2;
+            str2=temp;
+            len1=str1.length();
+            len2=str2.length();
         }
-        else
+        
+        for(int i=1;i<=len2;i++)
         {
-            for(int i=1;i<=len1;i++)
+            if(len1%i==0 && len2%i==0)
             {
-                if(len1%i==0 && len2%i==0)
+                if(isACommonDivisor(str1,str2,str1.substring(0,i)))
                 {
-                    if(isACommonDivisor(str2,str1,str2.substring(0,i)))
-                    {
-                        count++;
-                    }
+                    count++;
                 }
             }
         }
