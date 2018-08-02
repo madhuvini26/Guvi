@@ -38,9 +38,10 @@ public class ShortestPath {
             graph[u-1][v-1]=w;
             graph[v-1][u-1]=w;
         }
-        int cost=shortestPathCost(graph,4,2);
+        int cost=shortestPathCost(graph,0,n-1);
         System.out.println("Output :\n" + (destinationReached?cost:"-1"));
     }
+    
     private static int shortestPathCost(int[][] graph,int source,int destination)
     {
         if(source==destination || visited[source])
@@ -48,8 +49,7 @@ public class ShortestPath {
             if(source==destination)
                 destinationReached=true;
             return 0;
-        }
-            
+        }  
         int minCost=Integer.MAX_VALUE;
         int cost;
         visited[source]=true;
@@ -60,7 +60,7 @@ public class ShortestPath {
                 cost=graph[source][i] + shortestPathCost(graph,i,destination);
                 if(cost<minCost && destinationReached)
                     minCost=cost;
-                if(source==4)
+                if(source==0)
                 {
                     Arrays.fill(visited, false);
                     visited[source]=true;
