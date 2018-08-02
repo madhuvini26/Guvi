@@ -14,6 +14,7 @@ public class ShortestPath {
     static int[][] graph;
     static boolean[] visited;
     static boolean destinationReached;
+    static boolean destinationReachedInCurrentPath;
     
     public static void main(String[] args) 
     {
@@ -47,7 +48,10 @@ public class ShortestPath {
         if(source==destination || visited[source])
         {
             if(source==destination)
+            {
                 destinationReached=true;
+                destinationReachedInCurrentPath=true;
+            }
             return 0;
         }  
         int minCost=Integer.MAX_VALUE;
@@ -58,12 +62,13 @@ public class ShortestPath {
             if(i!=source && !visited[i] && graph[source][i]!=-1)
             {               
                 cost=graph[source][i] + shortestPathCost(graph,i,destination);
-                if(cost<minCost && destinationReached)
+                if(cost<minCost && destinationReachedInCurrentPath)
                     minCost=cost;
                 if(source==0)
                 {
                     Arrays.fill(visited, false);
                     visited[source]=true;
+                    destinationReachedInCurrentPath=false;
                 }
             }
         }
