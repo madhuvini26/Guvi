@@ -48,10 +48,10 @@ public class Thief {
         Iterator iterator=possibleCosts.iterator();
         
         System.out.println("Output :");
-	while (iterator.hasNext()) 
+        while (iterator.hasNext()) 
         {
-		System.out.print(iterator.next() + " ");
-	}
+            System.out.print(iterator.next() + " ");
+        }
     }
     
     static String convertToBinary(int decimal,int n)
