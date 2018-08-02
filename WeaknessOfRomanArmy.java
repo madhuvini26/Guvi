@@ -20,18 +20,10 @@ public class WeaknessOfRomanArmy {
         int weakness=0;
         
         for(int i=0;i<n;i++)
-        {
             for(int j=i+1;j<n;j++)
-            {
-                for(int k=j+1;k<n;k++)
-                {
+                for(int k=j+1;k<n;k++)                
                     if(powers[i] > powers[j] && powers[j] > powers[k])
-                    {
-                        weakness++;
-                    }
-                }
-            }
-        }
+                        weakness++;                      
         System.out.println("Output :\n" + weakness);
     }
 }
