@@ -14,15 +14,17 @@ public class SmallestNumberAfterDeletion {
         long number=sc.nextLong();
         String numberString;
         int k=sc.nextInt();
-        int min;
+        long min;
         
         while(k-->0)
         {
-            min=Integer.MAX_VALUE;
+            min=Long.MAX_VALUE;
             numberString=String.valueOf(number);
             for(int i=0;i<noOfDigits(number);i++)
             {
-                int numberAfterRemoval=Integer.parseInt(numberString.substring(0,i) + numberString.substring(i+1));
+                long numberAfterRemoval=
+                        Long.parseLong(numberString.substring(0,i) 
+                        + numberString.substring(i+1));
                 if(numberAfterRemoval<min)
                 {
                     min=numberAfterRemoval;
