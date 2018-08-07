@@ -10,7 +10,7 @@ public class CamelCase {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.print("Input : ");
-        String[] words=sc.nextLine().split(" ");
+        String[] words=sc.nextLine().replaceAll(" +", " ").split(" ");
         boolean camelCase=true;
         
         for(int i=0;i<words.length;i++)
