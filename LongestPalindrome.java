@@ -29,7 +29,7 @@ public class LongestPalindrome {
                 }
             }
         }
-        System.out.print("Output : \n" +string.replace(largestPalindrome,"").length());
+        System.out.print("Output : \n" +largestPalindrome.length());
     }
     private static boolean isPalindrome(String string)
     {
