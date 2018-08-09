@@ -23,6 +23,10 @@ public class StringConversion {
     } 
     static int conversionCost(String string1,String string2,int len1,int len2)
     {
+        int insertionCost=Integer.MAX_VALUE;
+        int deletionCost=Integer.MAX_VALUE;
+        int updationCost;
+        
         if(len1==0)
             return len2;
         if(len2==0)
@@ -30,8 +34,12 @@ public class StringConversion {
         if(string1.charAt(len1-1)==string2.charAt(len2-1))
             return conversionCost(string1,string2,len1-1,len2-1);
 
-        return 1+min(conversionCost(string1,string2,len1,len2-1),
-                conversionCost(string1,string2,len1-1,len2),
-                conversionCost(string1,string2,len1-1,len2-1));
+        if(len1<len2)
+            insertionCost=conversionCost(string1,string2,len1,len2-1);
+        else if(len1>len2)
+            deletionCost=conversionCost(string1,string2,len1-1,len2);
+        updationCost=conversionCost(string1,string2,len1-1,len2-1);
+        
+        return 1+min(insertionCost,deletionCost,updationCost);
     }
 }
