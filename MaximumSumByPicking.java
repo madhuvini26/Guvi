@@ -27,8 +27,7 @@ public class MaximumSumByPicking {
         {
             int newExcluding=(including>excluding)?including:excluding;
             including=excluding+array[i];
-            excluding=newExcluding;
-            System.out.println(newExcluding + " " + including + " " + excluding);
+            excluding=newExcluding;            
         }
         return including>excluding?including:excluding;
     }
