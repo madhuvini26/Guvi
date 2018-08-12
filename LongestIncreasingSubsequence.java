@@ -1,3 +1,13 @@
+/*
+Given a number N and an array of N integers, find the length of the Longest Increasing Subsequence.
+Input Size : 1<=N<=1000
+Example:
+INPUT
+5
+1 2 2 1 3
+OUTPUT
+2
+*/
 package mypackage;
 
 import java.util.Scanner;
