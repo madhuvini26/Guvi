@@ -1,3 +1,14 @@
+/*
+Given a number N, print the number of ways of choosing another number 'x' such that'x+sum of digits of x=N' and print each 'x' 
+in a new line.
+Input Size : 1<=N<=1000000000
+Example:
+INPUT
+21
+OUTPUT
+1
+15 
+*/
 package mypackage;
 
 import java.util.ArrayList;
