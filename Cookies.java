@@ -1,3 +1,19 @@
+/*
+Waking up in the morning, Apollo decided to bake cookies. To bake one cookie, he needs n ingredients, and for each ingredient 
+he knows the value ai — how many grams of this ingredient one needs to bake a cookie. To prepare one cookie Apollo needs to use 
+all n ingredients. Apollo has bi gram of the i-th ingredient. Also she has k grams of a magic powder. Each gram of magic powder 
+can be turned to exactly 1 gram of any of the n ingredients and can be used for baking cookies. Your task is to determine the 
+maximum number of cookies, which Apollo is able to bake using the ingredients that he has and the magic powder.
+Input Size : N<=100000, k<=1000000000
+Example:
+INPUT
+3 1
+2 1 4
+11 3 16
+OUTPUT
+4
+*/
+
 package mypackage;
 
 import java.util.Scanner;
