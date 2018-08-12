@@ -1,3 +1,16 @@
+/*
+Given a number N followed by an array of N integers with each element in [1,N]. Change (replace) minimum number of elements 
+in the array in such a way that the array becomes a permutation (i.e. each of the integer from 1 to n was encountered in his 
+array exactly once). If there are multiple ways to do it print the lexicographically minimal permutation among them.
+Input Size : 2<=N<=100000
+Example:
+INPUT
+4
+3 2 2 3
+OUTPUT
+2
+1 2 4 3
+*/
 package mypackage;
 
 import java.util.HashMap;
