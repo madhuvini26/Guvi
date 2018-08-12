@@ -1,4 +1,12 @@
-package mypackage;
+/*
+Given a string, find the length of the longest substring without repeating characters.
+Input Size : |S|<=1000
+Example:
+INPUT
+abcabcccdd
+OUTPUT
+3
+*/package mypackage;
 
 import java.util.Arrays;
 import java.util.Scanner;
