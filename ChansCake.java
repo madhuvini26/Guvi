@@ -15,24 +15,17 @@ public class ChansCake {
         char[][] cake=new char[rows][columns];
         
         char[][] possibleArrangement=new char[2][columns];
-        for(int i=0;i<2;i++)
+        for(int j=0;j<columns;j++)
         {
-            for(int j=0;j<columns;j++)
+            if(j%2==0)
             {
-                if(i==0)
-                {
-                    if(j%2==0)
-                        possibleArrangement[i][j]='R';
-                    else
-                        possibleArrangement[i][j]='G';
-                }
-                else
-                {
-                    if(j%2==0)
-                        possibleArrangement[i][j]='G';
-                    else
-                        possibleArrangement[i][j]='R';
-                }
+                possibleArrangement[0][j]='R';
+                possibleArrangement[1][j]='G';
+            }
+            else
+            {
+                possibleArrangement[0][j]='G';
+                possibleArrangement[1][j]='R';
             }
         }
         int minCost=0;
