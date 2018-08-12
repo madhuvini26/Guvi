@@ -1,3 +1,13 @@
+/*
+Given 2 numbers N and K followed by N numbers find if there exists a pair of numbers such that it adds upto K.
+Input Size : N<=100000 
+Example:
+INPUT
+5 4
+1 2 2 4
+OUTPUT
+yes 
+*/
 package mypackage;
 
 import java.util.Scanner;
