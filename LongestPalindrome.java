@@ -1,3 +1,11 @@
+/*Find the length of remaining string from the given string after removing the longest palindrome from it.
+Input Size : |s|<=1000
+Example:
+INPUT
+abbac
+OUTPUT
+1*/
+
 package mypackage;
 
 import java.util.Scanner;
