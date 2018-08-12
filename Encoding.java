@@ -1,3 +1,13 @@
+/*
+Given 2 strings output the encoded string based on the given example.
+Example:
+INPUT
+core
+kata
+OUTPUT
+nplf
+*/
+
 package mypackage;
 
 import java.util.Scanner;
