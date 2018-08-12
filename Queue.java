@@ -1,3 +1,16 @@
+/*
+There are N people in a queue. For each person we know time T needed to serve him. A person will be disappointed if the time 
+he waits is more than the time needed to serve him. The time a person waits is the total time when all the people who stand in 
+the queue in front of him are served.If we swap some people in the queue, then we can decrease the number of people who are 
+disappointed, print the maximum number of not disappointed people that can be obtained after swapping optimally.
+Input Size : 1<=N<=100000 
+Example:
+INPUT
+5
+15 2 1 5 3
+OUTPUT
+4
+*/
 package mypackage;
 
 import java.util.Arrays;
