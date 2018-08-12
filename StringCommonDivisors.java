@@ -1,3 +1,13 @@
+/*String a is the divisor of string b if and only if there exists a positive integer x such that if we write out string a 
+consecutively x times, we get string b. For example, string 'abab' has two divisors — 'ab' and 'abab'. Given 2 strings of
+length N,M find the number of common divisors for them.
+Input Size : 1<=M, N<=1000000000
+Example:
+INPUT
+abcdabcd
+abcdabcdabcdabcd
+OUTPUT
+2*/
 package mypackage;
 
 import java.util.Scanner;
