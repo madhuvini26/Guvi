@@ -1,3 +1,13 @@
+/*
+Given 2 strings X,Y convert X to Y as cheaply as possible with cost of insertion, deletion as the position of the inserted 
+alphabet in A-Z and substitution as the difference in their positions in A-Z.
+Input Size : 1<=N<=1000
+Example:
+INPUT
+arc bug
+OUTPUT
+8  
+*/
 package mypackage;
 
 import java.util.Scanner;
