@@ -8,7 +8,8 @@ INPUT
 375 4
 OUTPUT
 30000
-*/package mypackage;
+*/
+package mypackage;
 
 import java.util.Scanner;
 
