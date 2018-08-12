@@ -1,3 +1,12 @@
+/*
+Given a sentence S, check whether it is a pangram.
+Input Size : |S|<=10000
+Example:
+INPUT
+A quick brown fox jumps over the lazy dog
+OUTPUT
+yes
+*/
 package mypackage;
 
 import java.util.Scanner;
