@@ -1,3 +1,14 @@
+/*
+Given a string S, check whether the given string is an anagram of the string “dhoni”. Anagram of a given string is a 
+permutation of the set of characters present in the string. For example for the string “baba” aabb and baab are anagrams 
+while aaab and bacd are not.
+Input Size : |S|<=100000 
+Example:
+INPUT
+inohd
+OUTPUT
+yes
+*/
 package mypackage;
 
 import java.util.Scanner;
