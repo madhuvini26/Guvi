@@ -1,3 +1,19 @@
+/*
+Given 2 integers N,M(where N is the number of vertices and M is the number of edges) followed by 'M' lines containing 2 vertices 
+U,V and weight W. Find the shortest path from 1-N.If there is no path print '-1'.
+Input Size : 1<=N, M<=100000
+Example:
+INPUT
+5 6
+1 2 2
+2 5 5
+2 3 4
+1 4 1
+4 3 3
+3 5 1
+OUTPUT
+5
+*/
 package mypackage;
 
 import java.util.Arrays;
