@@ -1,3 +1,19 @@
+/*
+You are given an array 'a' of size N. Your task is to print the array one element in a line in the decreasing order of number 
+of ones in its binary representation. In case of two numbers having same number of ones, the bigger number in its decimal 
+representation comes first.
+Input Size : N<=10000
+Example:
+INPUT
+5
+31 14 15 7 2
+OUTPUT
+31
+15
+14
+7
+2
+*/
 package mypackage;
 
 import java.util.Scanner;
