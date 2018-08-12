@@ -1,3 +1,13 @@
+/*
+Given a number N and an array of N elements, find the number of triplets ai < aj < ak(i < j < k) in the array.
+Input Size : 3<=N<=100000
+Example:
+INPUT
+5
+1 3 2 4 5 4
+OUTPUT
+4
+*/
 package mypackage;
 
 import java.util.Scanner;
