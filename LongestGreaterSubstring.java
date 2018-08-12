@@ -1,3 +1,12 @@
+/*
+33 - Given a string S, print the longest substring P such that P > S lexicographically. You may assume that such substring exists.
+Input Size : |S|<=10000
+Example:
+INPUT
+string
+OUTPUT
+tring
+*/
 package mypackage;
 
 import java.util.Scanner;
