@@ -7,7 +7,6 @@ kata
 OUTPUT
 nplf
 */
-
 package mypackage;
 
 import java.util.Scanner;
