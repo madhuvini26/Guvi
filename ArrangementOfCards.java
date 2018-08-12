@@ -1,3 +1,16 @@
+/*
+Given 2 numbers N,M corresponding to the number of 0 and 1 respectively, print anarrangement of cards which satisfies the 
+following conditions:
+1)There wouldn't be a pair of any side-adjacent cards with zeroes in a row.
+2)There wouldn't be a group of three consecutive cards containing numbers one.
+Print '-1' if it is impossible.
+Input Size : 1<=N<=100000
+Example:
+INPUT
+1 2
+OUTPUT
+101
+*/
 package mypackage;
 
 import java.util.Scanner;
