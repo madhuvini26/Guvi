@@ -1,3 +1,13 @@
+/*
+11 - A kindergarten teacher has to arrange 2n children in n pairs for daily walks. Design an algorithm for this task so that 
+for 2n − 1 days no pair would be the same and print the total number of distinct pairs.
+Input Size : |2n|<=1000000000000000000
+Example:
+INPUT
+4
+OUTPUT
+6
+*/
 package mypackage;
 
 import java.math.BigInteger;
