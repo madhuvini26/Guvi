@@ -1,3 +1,13 @@
+/*
+Given 4 numbers N,P,Q,R followed by N integers, find the maximum value of P*ai+Q*aj+R*ak(i<=j<=k).
+Input Size : 1<=N,P,Q,R<=100000
+Example:
+INPUT
+5 1 2 3
+1 2 3 4 5
+OUTPUT
+30
+*/
 package mypackage;
 
 import java.util.Scanner;
