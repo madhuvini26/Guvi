@@ -1,3 +1,12 @@
+/*
+Given 2 strings X,Y convert X to Y as cheaply as possible. Let the cost of insertion, deletion and updation be 1. Print the minimum cost.
+Input Size : 1<= N<=1000
+Example:
+INPUT
+BALL BALOON
+OUTPUT
+3
+*/
 package mypackage;
 
 import java.util.Scanner;
