@@ -1,3 +1,14 @@
+/*
+Given a number N and N strings of length atmost M, print the longest common prefix.
+Input Size : 1<=N, M<=100000
+Example:
+INPUT
+2
+Vishal
+Vidharba
+OUTPUT
+Vi
+*/
 package mypackage;
 
 import java.util.Scanner;
