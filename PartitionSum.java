@@ -1,7 +1,11 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+Given three numbers N,A,B. Find if it is possible to partition N into 2 equal groups containing A and B only.
+Input Size : 1<=N,A,B<=1000000000000000000
+Example:
+INPUT
+20 2 3
+OUTPUT
+YES
  */
 package mypackage;
 
