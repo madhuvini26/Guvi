@@ -1,3 +1,16 @@
+/*
+Given a string S, find if it denotes a circular motion(same initial and final positions).
+The instructions are:
+1)G:Move 1 Unit
+2)L:Turn Left
+3)R:Turn Right
+Input Size : |S| <=10000000
+Example:
+INPUT
+GLGLGLG
+OUTPUT
+no
+*/
 package mypackage;
 
 import java.util.Scanner;
