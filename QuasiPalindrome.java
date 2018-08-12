@@ -1,3 +1,12 @@
+/*
+Let quasi-palindromic number be such number that adding some leading zeros (possible none) to it produces a palindromic string. String t is called a palindrome, if it reads the same from left to right and from right to left. For example, numbers 131 and 2010200 are quasi-palindromic, they can be transformed to strings '131' and '002010200', respectively, which are palindromes. You are given some integer number x. Check if it's a quasi-palindromic number.
+Input Size : 1<=N<=1000000000
+Example:
+INPUT
+131
+OUTPUT
+yes
+*/
 package mypackage;
 
 import java.util.Scanner;
