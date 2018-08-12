@@ -1,3 +1,21 @@
+/*
+Given K - which is the number of bits, print all the possible combinations of numbers formed by printing all numbers with one 
+bit set, followed by two bits set, ... upto the point when all k-bits are set. They must be sorted according to the number of 
+bits set, if two numbers have the same number of bits set then they should be placed as per their value.
+Input Size : 1<=K<=1000
+Example:
+INPUT
+3
+OUTPUT
+000
+001
+010
+100
+101
+110
+011
+111
+*/
 package mypackage;
 
 import java.util.Arrays;
