@@ -1,3 +1,12 @@
+/*
+Given a number N, obtain the smallest number after deleting K digits.
+Input Size : 1<=N<=1000000000000000000
+Example:
+INPUT
+213 1
+OUTPUT
+13 
+*/
 package mypackage;
 
 import java.util.Scanner;
