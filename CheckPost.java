@@ -1,3 +1,26 @@
+/*
+Your city has n junctions. There are m one-way roads between the junctions. As a mayor of the city, you have to ensure the 
+security of all the junctions. To ensure the security, you have to build some police checkposts. Checkposts can only be built 
+in a junction. A checkpost at junction i can protect junction j if either i = j or the police patrol car can go to j from i 
+and then come back to i. Building checkposts costs some money. As some areas of the city are more expensive than others, 
+building checkpost at some junctions might cost more money than other junctions. You have to determine the minimum possible 
+money needed to ensure the security of all the junctions. Also you have to find the number of ways to ensure the security in 
+minimum price and in addition in minimum number of checkposts. Two ways are different if any of the junctions contains a 
+checkpost in one of them and do not contain in the other. Print two integers separated by spaces. The first one is the 
+minimum possible money needed to ensure the security of all the junctions. And the second one is the number of ways you can 
+ensure the security modulo.
+Input Size : n<=100000 and m<=3*100000 
+Example:
+INPUT
+3
+1 2 3
+3
+1 2
+2 3
+3 2
+OUTPUT
+3 1
+*/
 package mypackage;
 
 import java.util.ArrayList;
