@@ -1,3 +1,17 @@
+/*
+There are n students in an institution. For each student you know the number of times he/she has participated in the ACM ICPC 
+world programming championship. According to the ACM ICPCrules, each person can participate in the world championship at most 
+5 times. The head of the institution is recently gathering teams to participate in the world championship. Each team must 
+consist of exactly three people, at that, any person cannot be a member of two ormore teams. What maximum number of teams 
+can the head make if he wants each team to participate in the world championship with the same members at least k times?
+Input Size : N<=10000
+Example:
+INPUT
+5 2
+0 4 5 1 0
+OUTPUT
+1
+*/
 package mypackage;
 
 import java.util.Arrays;
