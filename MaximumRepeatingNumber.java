@@ -1,3 +1,13 @@
+/*
+Given a number N followed by N numbers. Keep the count of each number and print the maximum repeating number.
+Input Size : N <= 100000 
+Sample Testcase :
+INPUT
+5
+15 5 -20 -20 -45
+OUTPUT
+-20
+*/
 package mypackage;
 
 import java.util.HashMap;
