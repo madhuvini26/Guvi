@@ -14,8 +14,9 @@ OUTPUT
 */
 package mypackage;
 
-import java.util.Arrays;
+import java.util.Map;
 import java.util.Scanner;
+import java.util.TreeMap;
 
 /**
  *
@@ -24,36 +25,25 @@ import java.util.Scanner;
 public class Candies {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        
         System.out.print("Input : ");
         int n=sc.nextInt();
-        int[] ratings=new int[n];
-        
-        for(int i=0;i<n;i++)
-            ratings[i]=sc.nextInt();
+        int rating;
         int totalCandies=0;
-        int candies=1;
-        int count=0;
-        while(count<n)
+        TreeMap<Integer,Integer> count=new TreeMap<>();
+        for(int i=0;i<n;i++)
         {
-            int min=getMinimum(ratings);
-            for(int i=0;i<n;i++)
-            {
-                if(ratings[i]==min)
-                {
-                    totalCandies+=candies;
-                    ratings[i]=Integer.MAX_VALUE;
-                    count++;
-                }
-            }
+            rating=sc.nextInt();
+            if(count.containsKey(rating))
+                count.put(rating,count.get(rating)+1);
+            else
+                count.put(rating, 1);
+        }
+        int candies=1;
+        for(Map.Entry<Integer,Integer> entry : count.entrySet())
+        {
+            totalCandies+=entry.getValue()*candies;
             candies++;
         }
         System.out.println("Output :\n" + totalCandies);
-        
-    }
-    private static int getMinimum(int[] array)
-    {
-        Arrays.sort(array);
-        return array[0];
     }
 }
