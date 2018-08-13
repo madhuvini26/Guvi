@@ -1,3 +1,15 @@
+/*
+Given a number N followed by N numbers. Find if in any index of the array, the sum of numbers in the previous indices is 
+equal to the sum of elements after the index. i.e., at a particular position the prefix sum should be equal to suffix sum,
+if yes print 'yes' else 'no'.
+Input Size : N <= 100000
+Sample Testcase :
+INPUT
+5
+ 1 1 1 1 1
+OUTPUT
+yes
+*/
 package mypackage;
 
 import java.util.Scanner;
