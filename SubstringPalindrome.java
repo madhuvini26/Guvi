@@ -1,3 +1,12 @@
+/*
+Given a string S print all palindromes(of size more than one) in it. If there are more than one palindromes print it in ascending order.
+Input Size : |S| <= 1000
+Sample Testcase :
+INPUT
+abba
+OUTPUT bb
+abba
+*/
 package mypackage;
 
 import java.util.ArrayList;
