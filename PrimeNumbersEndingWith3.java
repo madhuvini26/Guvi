@@ -1,3 +1,12 @@
+/*
+Given a number N, find the sum of prime numbers that end with 3 from 2 to N.
+Input Size : N <= 100000 
+Sample Testcase :
+INPUT
+5
+OUTPUT
+3
+*/
 package mypackage;
 
 import java.util.Scanner;
