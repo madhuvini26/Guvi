@@ -1,3 +1,14 @@
+/*
+Given a number N print a right-angled triangle with the top level having n 1's and each level is one 1 lesser.
+Input Size : N <= 1000
+Sample Testcase :
+INPUT
+3
+OUTPUT
+1 1 1
+1 1
+1
+*/
 package mypackage;
 
 import java.util.Scanner;
