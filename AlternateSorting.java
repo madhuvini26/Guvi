@@ -1,5 +1,6 @@
 /*
-Alternate sorting: Given a number N and followed by N numbers, sort the array in such a way that the first number is first maximum and second number is 1st minimum 3rd number is 2nd maximumand so on..
+Alternate sorting: Given a number N and followed by N numbers, sort the array in such a way that the first number is 
+first maximum and second number is 1st minimum 3rd number is 2nd maximumand so on..
 Input Size : N <= 100000
 Sample Testcase :
 INPUT
