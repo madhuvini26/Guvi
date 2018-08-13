@@ -1,3 +1,12 @@
+/*
+Given a string S, remove the characters which exist more than one times, and print the remaining string.
+Input Size : |S| <= 10000000
+Sample Testcase :
+INPUT
+Engineering
+OUTPUT
+Er
+*/
 package mypackage;
 
 import java.util.Scanner;
