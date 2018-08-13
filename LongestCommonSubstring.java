@@ -1,3 +1,12 @@
+/*
+Given 2 strings S and A find the longest common substring.
+Input Size : |s| <= 1000, |A| <= 1000
+Sample Testcase :
+INPUT
+sundar sun
+OUTPUT
+sun
+*/
 package mypackage;
 
 import java.util.Scanner;
