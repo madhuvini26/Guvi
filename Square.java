@@ -27,7 +27,7 @@ public class Square {
             points[i].x=sc.nextInt();
             points[i].y=sc.nextInt();
         }
-        System.out.println("Output :\n" + isSquare(points));
+        System.out.println("Output :\n" + (isSquare(points)?"yes":"no"));
     }
     static boolean isSquare(Point[] points)
     {
