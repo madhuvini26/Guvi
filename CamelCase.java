@@ -1,3 +1,12 @@
+/*
+Given a sentence S as input check whether it is in camelcase. 
+input size : |s| <= 100000
+Sample Testcase :
+INPUT
+Good Laptop
+OUTPUT
+yes
+*/
 package mypackage;
 
 import java.util.Scanner;
