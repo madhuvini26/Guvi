@@ -19,7 +19,6 @@ import java.util.Scanner;
  * @author Hariharan
  */
 public class Byes {
-    static boolean powerOfTwo;
     public static void main(String[] args) 
     {
         Scanner sc=new Scanner(System.in);
