@@ -33,7 +33,7 @@ public class KRoundingOfN {
                 System.out.println("Output :\n"+product);
                 break;
             }   
-            i+=(i>1)?10:9;
+            i+=1;
         }
     }
 }
