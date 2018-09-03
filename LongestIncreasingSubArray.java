@@ -1,21 +1,3 @@
-/*
-Given a number N and an array of N integers, find the length of the Longest Increasing Subarray.
-Input Size : 1<=N<=100000
-Example:
-INPUT
-5
-1 2 2 1 3
-OUTPUT
-2
-*/
-package mypackage;
-
-import java.util.Scanner;
-
-/**
- *
- * @author Hariharan
- */
 public class LongestIncreasingSubArray {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
@@ -44,3 +26,4 @@ public class LongestIncreasingSubArray {
         System.out.println("Output :\n" + maxLength);
     }
 }
+
